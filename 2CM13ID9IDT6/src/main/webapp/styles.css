@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+body{
+    background-color: #000000;
+    color: #FF0000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#contenido{
+    align-content: center;
+    background-color: #3D0000;
+    width: 100%;
+    max-width: 40rem;
+    text-align: center;
+    padding: 2rem 0.5rem;
+    border-radius: 5em;
+}
+table{
+    border: .3rem double #950101;
+    margin-top: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+td{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    
+}
