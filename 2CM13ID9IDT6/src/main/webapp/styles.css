@@ -29,6 +29,9 @@ table{
     margin-top: 7%;
     margin-left: 10%;
     margin-right: 10%;
+    box-shadow: 2px -5px 400px 123px rgba(245,15,15,0.62);
+-webkit-box-shadow: 2px -5px 400px 123px rgba(245,15,15,0.62);
+-moz-box-shadow: 2px -5px 400px 123px rgba(245,15,15,0.62);
 }
 td{
     padding-left: 3rem;
