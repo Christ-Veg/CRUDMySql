@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Agregar Usuario</h1>
+                    <form action="VerUsuario" method="post">
+                    <div class="form-group">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" class="form-control" name="Nombre">
+                        <label for="ApellidoPat">Apellido Paterno</label>
+                        <input type="text" class="form-control" name="ApellidoPat">
+                        <label for="ApellidoMat">Apellido Materno</label>
+                        <input type="text" class="form-control" name="ApellidoMat">
+                        <label for="Password">Contrase&ntilde;a</label>
+                        <input type="Password" class="form-control" name="Password">
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Enviar">
+                    <a href="index.html"><input type="reset" class="btn btn-danger" value="Cancelar"></a>
+                    </form>
+                     
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>
