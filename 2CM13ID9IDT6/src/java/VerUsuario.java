@@ -12,6 +12,11 @@ public class VerUsuario extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         PrintWriter out = response.getWriter();
+        
+        int id = Integer.parseInt(request.getParameter("id"));
+        Crud crud = new Crud();
+        Usuario usuario = crud.getUsuario(id);
+        
         out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
@@ -23,18 +28,15 @@ public class VerUsuario extends HttpServlet {
             out.println("<div class='card'>");
             out.println("<div class='card-body'>");
             out.println("<h1 class='card-title'>Agregar Usuario</h1>");
-            out.println("<form action='VerUsuario' method='post'>");
             out.println("<div class='form-group'>");
             out.println("<label for='Nombre'>Nombre</label>");
-            out.println("<input type='text' class='form-control' name='Nombre'>");
+            out.println("<input type='text' class='form-control' name='Nombre' value='"+usuario.getNombre()+"'>");
             out.println("<label for='ApellidoPat'>Apellido Paterno</label>");
-            out.println("<input type='text' class='form-control' name='ApellidoPat'>");
+            out.println("<input type='text' class='form-control' name='ApellidoPat' value='"+usuario.getApellidoPat()+"'>");
             out.println("<label for='ApellidoMat'>Apellido Materno</label>");
-            out.println("<input type='text' class='form-control' name='ApellidoMat'>");
+            out.println("<input type='text' class='form-control' name='ApellidoMat' value='"+usuario.getApellidoPat()+"'>");
             out.println("<label for='Password'>Contrase&ntilde;a</label>");
-            out.println("<input type='Password' class='form-control' name='Password'>");
             out.println("</div>");
-            out.println("<input type='submit' class='btn btn-primary' value='Enviar'>");
             out.println("<a href='index.html'><input type='reset' class='btn btn-danger' value='Cancelar'></a>");
             out.println("</form>");
             out.println("</div></div></div>");
