@@ -9,10 +9,11 @@ public class Conexion {
     
     public Conexion()
         {
-        String cadena="jdbc:mysql://localhost:3306/Usuarios";
+        String cadena="jdbc:mysql://localhost:3306/2CM13ID9IDT6";
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection(cadena,"root","12345");
+            con = DriverManager.getConnection(cadena,"root","1234");
+            System.out.println("conectado.");
         } catch (ClassNotFoundException ex) {
             System.out.println(ex.getMessage());
         } catch (SQLException ex) {

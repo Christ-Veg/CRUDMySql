@@ -16,6 +16,14 @@
         <servlet-name>EliminarUsuario</servlet-name>
         <servlet-class>EliminarUsuario</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>menu</servlet-name>
+        <servlet-class>menu</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ActualizarInformacion</servlet-name>
+        <servlet-class>ActualizarInformacion</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>VerUsuario</servlet-name>
         <url-pattern>/VerUsuario</url-pattern>
@@ -31,6 +39,14 @@
     <servlet-mapping>
         <servlet-name>EliminarUsuario</servlet-name>
         <url-pattern>/EliminarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>menu</servlet-name>
+        <url-pattern>/menu</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActualizarInformacion</servlet-name>
+        <url-pattern>/ActualizarInformacion</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
